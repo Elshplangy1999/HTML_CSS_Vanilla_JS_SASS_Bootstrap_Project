@@ -38,14 +38,23 @@ header {
       }
       .prev {
         right: 20px;
+        @media #{$maxMobile} {
+          right: 10px;
+        }
       }
       .next {
         left: 20px;
         right: auto;
+        @media #{$maxMobile} {
+          left: 10px;
+        }
       }
       .slide-number {
         right: 20px;
         left: auto;
+        @media #{$maxMobile} {
+          right: 10px;
+        }
       }
     }
   }
