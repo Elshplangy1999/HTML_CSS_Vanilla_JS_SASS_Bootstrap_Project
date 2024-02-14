@@ -1,0 +1,42 @@
+@media (max-width: 767px) {
+  header .container .links {
+    left: -250px;
+    width: 250px;
+    transition: left 0.3s; } }
+header .container .links.active {
+  left: 0;
+  right: auto; }
+header .container .mobile svg {
+  transform: rotate(180deg); }
+
+.slider-cont .container .slider {
+  height: 400px; }
+  @media (max-width: 767px) {
+    .slider-cont .container .slider {
+      width: 100% !important; } }
+  .slider-cont .container .slider .prev,
+  .slider-cont .container .slider .next {
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+    top: calc(50% - 20px);
+    cursor: pointer; }
+  .slider-cont .container .slider .prev {
+    right: 20px; }
+    @media (max-width: 575px) {
+      .slider-cont .container .slider .prev {
+        right: 10px; } }
+  .slider-cont .container .slider .next {
+    left: 20px;
+    right: auto; }
+    @media (max-width: 575px) {
+      .slider-cont .container .slider .next {
+        left: 10px; } }
+  .slider-cont .container .slider .slide-number {
+    right: 20px;
+    left: auto; }
+    @media (max-width: 575px) {
+      .slider-cont .container .slider .slide-number {
+        right: 10px; } }
+
+/*# sourceMappingURL=style-RTL.css.map */

@@ -1,0 +1,28 @@
+.section-title {
+  position: relative;
+  h2 {
+    background-color: $redColor;
+    color: white;
+    width: 350px;
+    text-align: center;
+    padding: 10px 15px;
+    margin: 40px auto;
+    border-radius: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1.5px;
+      z-index: -1;
+      background-color: $greyColor;
+    }
+    @media #{$maxMobile} {
+      width: 250px;
+    }
+  }
+}

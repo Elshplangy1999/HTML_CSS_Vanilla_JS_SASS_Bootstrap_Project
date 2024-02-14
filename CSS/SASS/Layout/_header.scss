@@ -1,0 +1,71 @@
+header {
+  border-bottom: 1px solid $greyColor;
+  .container {
+    @media #{$minMedium} and #{$maxDesktop} {
+      flex-direction: column;
+    }
+    .logo {
+      width: 30%;
+      @media #{$minMedium} and #{$maxDesktop} {
+        width: 100%;
+        text-align: center;
+      }
+      @media #{$maxSmall} {
+        width: 70%;
+      }
+    }
+    .links {
+      width: 70%;
+      background-color: $redColor;
+      @media #{$minMedium} and #{$maxDesktop} {
+        width: 100%;
+        margin-top: 20px;
+      }
+      @media #{$maxSmall} {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        z-index: 3;
+        width: 250px;
+        height: 100vh;
+        border-radius: 0 !important;
+        transition: 0.3s;
+      }
+      &.active {
+        right: 0;
+      }
+      .close {
+        cursor: pointer;
+        @media #{$maxSmall} {
+          display: block !important;
+        }
+      }
+      li {
+        width: 20%;
+        @media #{$minMedium} and #{$maxDesktop} {
+          padding: 1rem 0 !important;
+        }
+        @media #{$maxSmall} {
+          width: 100%;
+          text-align: start !important;
+        }
+        a {
+          &:hover {
+            transition: 0.3s;
+            color: #c5c5c5 !important;
+          }
+        }
+      }
+    }
+    .mobile {
+      cursor: pointer;
+      @media #{$maxSmall} {
+        display: block !important;
+      }
+      svg {
+        color: $redColor;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "./SASS/Helpers/variables";
+
+header {
+  .container {
+    .links {
+      @media #{$maxSmall} {
+        left: -250px;
+        width: 250px;
+        transition: left 0.3s;
+      }
+      &.active {
+        left: 0;
+        right: auto;
+      }
+    }
+    .mobile {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.slider-cont {
+  .container {
+    .slider {
+      height: 400px;
+      @media #{$maxSmall} { 
+        width: 100% !important;
+      }
+      .prev,
+      .next {
+        width: 40px;
+        height: 40px;
+        z-index: 5;
+        top: calc(50% - 20px);
+        cursor: pointer;
+      }
+      .prev {
+        right: 20px;
+        @media #{$maxMobile} {
+          right: 10px;
+        }
+      }
+      .next {
+        left: 20px;
+        right: auto;
+        @media #{$maxMobile} {
+          left: 10px;
+        }
+      }
+      .slide-number {
+        right: 20px;
+        left: auto;
+        @media #{$maxMobile} {
+          right: 10px;
+        }
+      }
+    }
+  }
+}
