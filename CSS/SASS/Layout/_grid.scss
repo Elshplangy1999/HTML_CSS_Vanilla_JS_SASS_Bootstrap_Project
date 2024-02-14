@@ -1,0 +1,10 @@
+* {
+  @include prefixer(box-sizing, border-box, webkit moz);
+}
+
+.container {
+  @media #{$minLarge} { 
+    width: 1200px;
+  }
+  position: relative;
+}

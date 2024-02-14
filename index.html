@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/all.min.css">
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>SASS Project</title>
+</head>
+<body>
+  <!-- Start Header -->
+
+  <header class="pt-4 pb-4">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="logo ">
+        <h2 class="text-uppercase">Composition</h2>
+        <p class="mb-0">Free PSD Website Template</p>
+      </div>
+      <ul class="links list-unstyled d-flex rounded-4 mb-0">
+        <li class="close p-3 mt-4 mb-3 text-center d-none">
+          <a class="a-close text-light">
+            <i class="fa-solid fa-x fs-3"></i>
+          </a>
+        </li>
+        <li class="p-3 text-center text-uppercase"><a class="text-light text-decoration-none" href="">Home Page</a></li>
+        <li class="p-3 text-center text-uppercase"><a class="text-light text-decoration-none" href="">Style Demo</a></li>
+        <li class="p-3 text-center text-uppercase"><a class="text-light text-decoration-none" href="">Full Width</a></li>
+        <li class="p-3 text-center text-uppercase"><a class="text-light text-decoration-none" href="">Dropdown</a></li>
+        <li class="p-3 text-center text-uppercase"><a class="text-light text-decoration-none" href="index-RTL.html">العربية</a></li>
+      </ul>
+      <div class="mobile d-none">
+        <i class="fa-solid fa-outdent fs-2"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- End Header -->
+
+  <!-- Start Slider -->
+
+  <div class="slider-cont mt-4">
+    <div class="container">
+      <q class="d-block fst-italic text-center fs-5 m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatum rem dolorum suscipit assumenda quia, molestias iste repudiandae saepe ipsa.</q>
+      <div class="slider w-75 mt-4 mb-2 ms-auto me-auto position-relative">
+        <div id="prev" class="prev position-absolute d-flex justify-content-center align-items-center" title="Previous"><i class="fas fa-angle-left"></i></div>
+        <div id="slide-number" class="slide-number position-absolute bg-white fs-6 fw-bold pt-1 pb-1 ps-2 pe-2 rounded-2"></div>
+        <img class="position-absolute w-100 h-100" src="./Images/slider-1.jpg" alt="slider-1">
+        <img class="position-absolute w-100 h-100" src="./Images/slider-2.jpg" alt="slider-2">
+        <img class="position-absolute w-100 h-100" src="./Images/slider-3.jpg" alt="slider-3">
+        <img class="position-absolute w-100 h-100" src="./Images/slider-4.jpg" alt="slider-4">
+        <img class="position-absolute w-100 h-100" src="./Images/slider-5.jpg" alt="slider-5">
+        <div id="next" class="next position-absolute d-flex justify-content-center align-items-center" title="Next"><i class="fas fa-angle-right"></i></div>
+      </div>
+      <div class="slide-controls">
+        <span id="indecator" class="indecator"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Slider -->
+
+  <!-- Start Our Services -->
+
+  <div class="our-services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Services</h2>
+      </div>
+      <div class="row">
+        <div class="services-col col-lg-4 col-md-6 text-center text-md-start mb-3">
+          <div class="heading d-flex align-items-center mb-2 justify-content-center justify-content-md-start flex-column flex-md-row">
+            <i class="fa-solid fa-earth-americas fa-2x mb-2 mb-md-0"></i>
+            <h4 class="ms-3 me-3">Indonectetus facilis</h4>
+          </div>
+          <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam maiores illo nihil culpa officia, aperiam accusamus iusto deleniti. Ad, architecto!</p>
+          <a href="#" class="text-decoration-none align-items-center">Read More...</a>
+        </div>
+        <div class="services-col col-lg-4 col-md-6 text-center text-md-start mb-3">
+          <div class="heading d-flex align-items-center mb-2 justify-content-center justify-content-md-start flex-column flex-md-row">
+            <i class="fa-solid fa-users fa-2x mb-2 mb-md-0"></i>
+            <h4 class="ms-3 me-3">Indonectetus facilis</h4>
+          </div>
+          <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam maiores illo nihil culpa officia, aperiam accusamus iusto deleniti. Ad, architecto!</p>
+          <a href="#" class="text-decoration-none align-items-center">Read More...</a>
+        </div>
+        <div class="services-col col-lg-4 col-md-6 text-center text-md-start">
+          <div class="heading d-flex align-items-center mb-2 justify-content-center justify-content-md-start flex-column flex-md-row">
+            <i class="fa-solid fa-gears fa-2x mb-2 mb-md-0"></i>
+            <h4 class="ms-3 me-3">Indonectetus facilis</h4>
+          </div>
+          <p class="mb-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam maiores illo nihil culpa officia, aperiam accusamus iusto deleniti. Ad, architecto!</p>
+          <a href="#" class="text-decoration-none align-items-center">Read More...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Our Services -->
+
+  <!-- Start Our Players -->
+
+  <div class="our-players mt-5 mb-3">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Players</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg col-md-4 col-sm-6 column mb-3">
+          <img class="rounded-3" src="./Images/team-1.png" alt="Player 1">
+          <p class="mt-2 mb-2 fw-bold"><span class="text-black">Name:</span> John Doe</p>
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas mollitia error veniam.</p>
+          <a href="#" class="text-decoration-none align-items-center">View Profile</a>
+        </div>
+        <div class="col-lg col-md-4 col-sm-6 column mb-3">
+          <img class="rounded-3" src="./Images/team-2.png" alt="Player 1">
+          <p class="mt-2 mb-2 fw-bold"><span class="text-black">Name:</span> John Doe</p>
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas mollitia error veniam.</p>
+          <a href="#" class="text-decoration-none align-items-center">View Profile</a>
+        </div>
+        <div class="col-lg col-md-4 col-sm-6 column mb-3">
+          <img class="rounded-3" src="./Images/team-3.jpg" alt="Player 1">
+          <p class="mt-2 mb-2 fw-bold"><span class="text-black">Name:</span> John Doe</p>
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas mollitia error veniam.</p>
+          <a href="#" class="text-decoration-none align-items-center">View Profile</a>
+        </div>
+        <div class="col-lg col-md-4 col-sm-6 column mb-3">
+          <img class="rounded-3" src="./Images/team-4.jpg" alt="Player 1">
+          <p class="mt-2 mb-2 fw-bold"><span class="text-black">Name:</span> John Doe</p>
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas mollitia error veniam.</p>
+          <a href="#" class="text-decoration-none align-items-center">View Profile</a>
+        </div>
+        <div class="col-lg col-md-4 col-sm-6 column mb-3">
+          <img class="rounded-3" src="./Images/team-5.jpg" alt="Player 1">
+          <p class="mt-2 mb-2 fw-bold"><span class="text-black">Name:</span> John Doe</p>
+          <p class="mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas mollitia error veniam.</p>
+          <a href="#" class="text-decoration-none align-items-center">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Our Players -->
+
+  <!-- Start Lorem -->
+
+  <div class="lorem mb-3">
+    <div class="container">
+      <div class="section-title">
+        <h2>Lorem Ipsum</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <img class="w-100 mb-4" src="./Images/lorem-1.jpg" alt="Lorem 1">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img class="w-100 mb-4" src="./Images/lorem-2.jpg" alt="Lorem 2">
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <img class="w-100 mb-4" src="./Images/lorem-3.jpg" alt="Lorem 3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Lorem -->
+
+  <!-- Start Footer -->
+
+  <footer class="pt-5 pb-4 text-center text-md-start w-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <p class="fw-bold">Latest From The Blog</p>
+          <div class="content d-flex mb-3 align-items-center flex-column flex-sm-row">
+            <img class="mb-3" src="./Images/lorem-1.jpg" alt="Lorem 1">
+            <div class="text ms-3 me-3">
+              <h6 class="fw-bold">Metuervestas mus lacinia</h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sunt libero animi maiores harum consectetur, cupiditate velit? Quibusdam.</p>
+            </div>
+          </div>
+          <div class="content d-flex mb-3 align-items-center flex-column flex-sm-row">
+            <img class="mb-3" src="./Images/lorem-2.jpg" alt="Lorem 2">
+            <div class="text ms-3 me-3">
+              <h6 class="fw-bold">Metuervestas mus lacinia</h6>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sunt libero animi maiores harum consectetur, cupiditate velit? Quibusdam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <p class="fw-bold mb-2">Company Details</p>
+          <ul class="list-unstyled">
+            <li>Company Name</li>
+            <li>Street Name & Number</li>
+            <li>Town</li>
+            <li class="mb-2">Postcode/ZIP</li>
+            <li>Tel: xxxx xxxxxxxx</li>
+            <li>Fax: xxxx xxxxxxxx</li>
+            <li class="mb-2">Email: <span>contact@mydomain.com</span></li>
+          </ul>
+          <p class="fw-bold mb-0">Office Hours</p>
+          <p class="mb-0">Monday-Friday: 08:00 - 17:30</p>
+          <p>Saturday: 08:00 - 13:00</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <p class="fw-bold">Contact Us</p>
+          <form class="w-100 d-flex flex-column" action="">
+            <input class="rounded-2 p-2 mb-3 border-0" type="text" placeholder="Name">
+            <input class="rounded-2 p-2 mb-3 border-0" type="email" placeholder="Email">
+            <textarea class="rounded-2 p-2 mb-3 border-0" placeholder="Message"></textarea>
+          </form>
+          <button class="main-button mb-3" type="submit">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div class="copyright mt-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>Copyright &copy; 2024 - All Rights Reserved</div>
+        <div>Designed By OS Template</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End Footer -->
+
+  <script src="./JS/all.min.js"></script>
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/main.js"></script>
+</body>
+</html>
