@@ -18,9 +18,15 @@
       }
       .prev {
         left: 20px;
+        @media #{$maxMobile} {
+          left: 10px;
+        }
       }
       .next {
         right: 20px;
+        @media #{$maxMobile} {
+          right: 10px;
+        }
       }
       .prev svg,
       .next svg {
@@ -37,6 +43,9 @@
         top: 20px;
         color: $redColor;
         z-index: 2;
+        @media #{$maxMobile} {
+          left: 10px;
+        }
       }
       img {
         opacity: 0;
@@ -107,6 +116,10 @@
       }
       img {
         height: 207.83px;
+        @media #{$maxMobile} {
+          height: 254.83px;
+          width: 100%;
+        }
       }
       p {
         color: $greyColor;
